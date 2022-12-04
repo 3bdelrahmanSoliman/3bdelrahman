@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.upper{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper p {
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    text-shadow: 0px 0px 0px 30px black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    padding: 0px 10px;
+    background-color: rgb(82, 82, 82);
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+header .span{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+
+header span{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    margin-top: 7px;
+    transition: ease-in-out all .5s;
+}
+
+
+nav{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+nav a{
+color: white;
+transition: ease-in-out all .5s;
+
+}
+
+nav span{
+    width: 0px;
+    background-color: rgba(252, 144, 36, 0.3);
+    transition: ease-in-out all .5s;
+    box-shadow: 0px -35px 1px rgba(252, 144, 36, 0.3);
+}
+nav div:hover a{
+    color: rgb(252, 144, 36);
+    letter-spacing: 2px;
+}
+nav div:hover span{
+    width: 100%;
+}
+.span:hover .spa1{
+    background-color: white;
+}
+.span:hover .spa2{
+    background-color: white;
+}
+.span:hover .spa3{
+    background-color: white;
+}
+
+main{
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+main .img{
+position: absolute;
+border-radius: 5px;
+width: 45%; 
+opacity: 0;
+transform: scale(3);
+transition: linear 1s;
+transition-delay: .5s;
+margin-top: 5px;
+z-index: 1;
+}
+img{
+    position: absolute;
+    width: 100%;
+}
+.about{
+    position: absolute;
+    width: 45%;
+    top: 20%;
+    height: 60%;
+    border-radius: 5px;
+    background-color: gray;
+    right:100% ;
+    transition: linear 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.about p {
+    font-size: 2.1em;
+    color: white;
+    margin: 20px 0px;
+    text-align: center;
+}
+.bottom{
+    width: 100%;
+    height: 10vh;
+    margin-top: 10px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bottom p {
+    font-size: 40px;
+    font-family: 'Cairo', sans-serif;;
+    transition: linear 2s;
+}
+.bottom div {
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    bottom: 175%;
+}
+main .gif{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.b1{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.pro1{
+    width: 33%;
+    height: 49.7%;
+    position: relative;
+    transition: ease-in-out .5s;
+    z-index: 1;
+}
+
+.b1 img{
+    width: 100%;
+    height: 100%;
+}
+.pro1 div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: ease-in-out .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro1:hover div{
+    z-index: 1;
+    background-color: rgba(128, 128, 128, 0.63);
+}
+.pro1 div button{
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.68);
+    cursor: pointer;
+    transition: ease-in-out .3s;}
+.pro1 div:hover button{
+    opacity: 1;
+}
+.pro1 div button:hover{
+    background-color: gray;
+    color: white;
+}
+.cotacts{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.cotacts div{
+position: absolute;
+height: 100%;
+width: .1%;
+left: 99.9%;
+background-color: gray;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+transition: ease-in-out .5s;
+}
+.cotacts a{
+    font-size: 40px;
+    margin: 0px 10%;
+    color: rgba(255, 255, 255, 0.7);
+}
+.cotacts a:hover{
+    color:rgb(252, 144, 36);
+}
+audio{
+    display: none;
+}
+.aboutt{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.aboutt img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.bartrack{
+    position: relative;
+    width: 400px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50px;
+    overflow: hidden;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.bar{
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    border-radius: 50px;
+    background-color: green;
+    left: 0px;
+    transition: .7s;
+
+}
+.bar1{
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    border-radius: 50px;
+    background-color: green;
+    left: 0px;
+    transition: .7s;
+
+}
+.bar2{
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    border-radius: 50px;
+    background-color: green;
+    left: 0px;
+    transition: .7s;
+
+}
+.bar3{
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    border-radius: 50px;
+    background-color: green;
+    left: 0px;
+    transition: .7s;
+
+}
+.bartrack p{
+    position: absolute;
+    z-index: 1;
+    transition: .7s;
+    color: white;
+}
+.help{
+    position: absolute;
+    bottom: 110%;
+}
+
+
+
+
+
+
+@media (max-width:800px){
+    .about{
+        top: 0px;
+        height: 163px;
+        margin-top: 5px;
+    }
+    .about p{
+        font-size: large;
+        text-align: center;
+    }
+        .b1 {
+            height: 300vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    .pro1{
+        width: 100%;
+        height: 500px;
+        margin-top: 5px;
+    }
+.bartrack {
+    position: relative;
+    width: 350px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50px;
+    overflow: hidden;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+}
+@media (min-width:800px) and (max-width:1200px){
+    .about{
+        top: 0px;
+        height: 170px;
+        margin-top: 5px;
+        width: 45%;
+        height: 60%;
+    }
+    .about p{
+        font-size: 40px;
+        text-align: center;
+    }
+        .b1 {
+            height: 300vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    .pro1{
+        width: 100%;
+        height: 500px;
+        margin-top: 5px;
+    }
+
+
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 3px;
+}
